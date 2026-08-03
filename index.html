@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b6b4f" />
+    <title>Busco | Compra lo que necesitas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="rewards.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Busco, inicio"><span class="brand-mark">b</span>busco<span class="dot">.</span></a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#explorar">Explorar solicitudes</a><a href="#recompensas">Recompensas</a><a href="#tarifas">Compra protegida</a><a href="#como-funciona">Cómo funciona</a>
+      </nav>
+      <div class="header-actions"><a class="text-button demo-link" href="app.html">Ver demo</a><button class="text-button" data-open="login">Ingresar</button><button class="button button-small" data-open="register">Crear cuenta</button></div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">EL MARKETPLACE AL REVÉS</p>
+          <h1>Publica lo que buscas.<br /><em>Recibe mejores ofertas.</em></h1>
+          <p class="hero-text">No recorras decenas de tiendas. Dile a la comunidad qué necesitas y deja que vendedores verificados compitan por ayudarte.</p>
+          <div class="hero-actions"><button class="button button-primary" data-open="publish">Publicar lo que necesito <span>→</span></button><a class="play-link" href="#como-funciona"><span class="play">▶</span> Ver cómo funciona</a></div>
+          <div class="trust-row"><div><strong>+12 mil</strong><span>solicitudes activas</span></div><div><strong>4.9/5</strong><span>usuarios satisfechos</span></div><div><strong>Pago seguro</strong><span>hasta recibir tu compra</span></div></div>
+        </div>
+        <div class="hero-visual" aria-label="Ejemplo de una solicitud publicada">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="request-card floating-card">
+            <div class="request-top"><span class="mini-avatar">JM</span><span><b>Javier M.</b><small>Busca cerca de Quito</small></span><span class="live"><i></i> Activa</span></div>
+            <div class="phone-art"><div class="phone-camera"></div><div class="phone-screen"></div></div>
+            <p class="card-category">TECNOLOGÍA · SEMINUEVO</p><h3>iPhone 13 Pro, 256 GB</h3><p class="card-detail">Idealmente con batería mayor al 85%</p>
+            <div class="budget"><span>Mi presupuesto</span><strong>$620 <small>USD</small></strong></div>
+            <div class="offers"><span class="offer-avatars"><i>R</i><i>A</i><i>M</i></span><b>8 ofertas recibidas</b><span>→</span></div>
+          </div>
+          <div class="notice-card"><span class="notice-icon">✓</span><span><b>Una nueva oferta</b><small>Andrea te ofrece $598</small></span></div>
+          <span class="float-tag tag-top">⌁ Tú defines el precio</span><span class="float-tag tag-bottom">🛡 Compra protegida</span>
+        </div>
+      </section>
+
+      <section class="categories" id="explorar"><div class="section-heading"><div><p class="eyebrow">EXPLORA POR CATEGORÍA</p><h2>¿Qué estás buscando hoy?</h2></div><a href="#solicitudes">Ver todas las categorías →</a></div><div class="category-grid">
+        <button class="category active" data-category="Tecnología"><span>⌁</span><b>Tecnología</b><small>1,284 solicitudes</small></button><button class="category" data-category="Hogar"><span>⌂</span><b>Hogar y muebles</b><small>968 solicitudes</small></button><button class="category" data-category="Vehículos"><span>▱</span><b>Vehículos</b><small>542 solicitudes</small></button><button class="category" data-category="Moda"><span>♧</span><b>Moda</b><small>891 solicitudes</small></button><button class="category" data-category="Coleccionables"><span>✦</span><b>Coleccionables</b><small>326 solicitudes</small></button><button class="category" data-category="Servicios"><span>◌</span><b>Servicios</b><small>714 solicitudes</small></button>
+      </div></section>
+
+      <section class="requests" id="solicitudes"><div class="section-heading"><div><p class="eyebrow">SOLICITUDES RECIENTES</p><h2>Personas que ya saben lo que quieren</h2></div><div class="filters"><button class="filter selected">Más recientes</button><button class="filter">Cerca de mí</button><button class="filter">Mayor presupuesto</button></div></div><div id="request-grid" class="request-grid"></div><button id="load-more" class="outline-button">Ver más solicitudes</button></section>
+
+      <section class="steps" id="como-funciona"><div class="steps-intro"><p class="eyebrow">ASÍ DE SIMPLE</p><h2>Comprar debería ser más inteligente.</h2><p>Busco invierte el proceso: tú pones las condiciones y los vendedores llegan a ti.</p><button class="button button-primary" data-open="publish">Quiero publicar una solicitud →</button></div><div class="step-list"><article><span>01</span><div><h3>Publica lo que necesitas</h3><p>Describe el producto, estado, presupuesto y cómo prefieres recibirlo.</p></div></article><article><span>02</span><div><h3>Compara ofertas reales</h3><p>Recibe propuestas de vendedores con precio, fotos, calificación y condiciones.</p></div></article><article><span>03</span><div><h3>Compra con tranquilidad</h3><p>El pago se libera al vendedor cuando confirmas que todo llegó como esperabas.</p></div></article></div></section>
+
+      <section class="rewards" id="recompensas"><div class="rewards-copy"><p class="eyebrow">PROGRAMA BUSCO+ ✦</p><h2>Las compras reales<br />sí tienen recompensa.</h2><p>Acumula monedas por cada compra verificada y cámbialas por beneficios dentro de Busco.</p><button class="button reward-button" data-open="register">Crear cuenta y empezar →</button><p class="reward-note">Las monedas no son efectivo ni se pueden transferir.</p></div><div class="rewards-panel"><div class="wallet-head"><span><i class="coin">✦</i> Mi billetera Busco+</span><small>Ver beneficios →</small></div><div class="coins-total"><span>MONEDAS DISPONIBLES</span><strong>248 <i>✦</i></strong><small>equivalentes a $12.40 en beneficios</small></div><div class="reward-status"><div><span class="status-icon">◌</span><p><b>42 monedas pendientes</b><small>Se liberan al confirmar tu entrega</small></p></div><span class="status-tag">En proceso</span></div><div class="reward-rule"><b>¿Cómo ganas monedas?</b><span>Compra confirmada</span><span class="operator">+</span><span>7 días sin reclamos</span><span class="operator">=</span><strong>Monedas disponibles ✦</strong></div></div></section>
+      <section class="reward-protection"><div><p class="eyebrow">UN SISTEMA JUSTO</p><h2>Recompensamos compras, no trampas.</h2></div><div class="protection-grid"><article><span>01</span><h3>Compra validada</h3><p>Las monedas quedan pendientes hasta que la entrega sea confirmada.</p></article><article><span>02</span><h3>Identidad y envío</h3><p>Revisamos las cuentas y verificamos la entrega mediante código seguro.</p></article><article><span>03</span><h3>Beneficios, no efectivo</h3><p>Úsalas en descuentos y envíos; nunca se retiran ni transfieren.</p></article></div></section>
+      <section class="protected-payment" id="tarifas"><div class="payment-copy"><p class="eyebrow">COMPRA PROTEGIDA BUSCO</p><h2>Haz el trato aquí.<br /><em>Así los dos están cubiertos.</em></h2><p>Cuando pagas dentro de Busco, cuidamos tu dinero hasta que la compra llegue y ayudamos si algo no sale bien.</p><div class="policy-list"><p><span>✓</span> Pago retenido hasta confirmar la entrega</p><p><span>✓</span> Soporte y resolución de disputas</p><p><span>✓</span> Recompensas solo en compras dentro de Busco</p></div></div><div class="fee-card"><div class="fee-card-head"><span>Resumen de una compra</span><small>Ejemplo referencial</small></div><div class="fee-product"><span>Oferta aceptada</span><b>$100.00</b></div><div class="fee-line"><span>Protección del comprador <small>3%</small></span><b>$3.00</b></div><div class="fee-line"><span>Comisión de venta <small>5%</small></span><b>$5.00</b></div><div class="fee-total"><span>El comprador paga</span><b>$103.00</b></div><div class="seller-payout"><span>El vendedor recibe</span><strong>$95.00</strong></div><p class="fee-caption">La comisión financia pagos seguros, soporte, verificación y la protección de ambas partes.</p></div></section>
+      <section class="off-platform"><p class="eyebrow">POLÍTICA DE OPERACIONES</p><h2>Las ofertas y pagos deben mantenerse dentro de Busco.</h2><p>Compartir teléfonos, enlaces externos, transferencias directas o pedir salir de la plataforma antes de completar la compra puede limitar la cuenta. Fuera de Busco no hay protección de pago, soporte ni monedas.</p><div class="policy-actions"><span>🛡 Operación protegida</span><span>✦ Monedas y beneficios</span><span>↺ Ayuda con disputas</span></div></section>
+      <section class="safe" id="seguridad"><div><p class="eyebrow">TRANQUILIDAD EN CADA COMPRA</p><h2>Tu dinero y tu decisión, siempre protegidos.</h2><p>Pagos retenidos de forma segura, perfiles evaluados y soporte cuando lo necesites.</p></div><div class="safe-points"><p><span>✓</span> Vendedores con identidad validada</p><p><span>✓</span> Pago protegido hasta la entrega</p><p><span>✓</span> Ayuda para resolver cualquier problema</p></div></section>
+    </main>
+    <footer><a class="brand" href="#inicio"><span class="brand-mark">b</span>busco<span class="dot">.</span></a><p>Donde las buenas compras empiezan contigo.</p><span>© 2026 Busco</span></footer>
+
+    <div class="modal-backdrop" id="modal" aria-hidden="true"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="close" aria-label="Cerrar">×</button><div id="modal-content"></div></div></div>
+    <template id="login-template"><div class="modal-head"><p class="eyebrow">BIENVENIDO DE VUELTA</p><h2 id="modal-title">Ingresa a Busco</h2><p>Continúa donde dejaste tus compras.</p></div><form class="account-form"><label>Correo electrónico<input type="email" placeholder="tu@email.com" required /></label><label>Contraseña<input type="password" placeholder="••••••••" required /></label><button class="button button-primary" type="submit">Ingresar</button><p>¿Aún no tienes cuenta? <button type="button" class="inline-link" data-open="register">Crea una gratis</button></p></form></template>
+    <template id="register-template"><div class="modal-head"><p class="eyebrow">EMPIEZA SIN COSTO</p><h2 id="modal-title">Crea tu cuenta</h2><p>Publica lo que buscas y recibe ofertas confiables.</p></div><form class="account-form"><label>Nombre completo<input type="text" placeholder="¿Cómo te llamas?" required /></label><label>Correo electrónico<input type="email" placeholder="tu@email.com" required /></label><label>Contraseña<input type="password" placeholder="Mínimo 8 caracteres" minlength="8" required /></label><button class="button button-primary" type="submit">Crear mi cuenta</button><p>Al continuar aceptas los términos y la política de privacidad.</p></form></template>
+    <template id="publish-template"><div class="modal-head"><p class="eyebrow">NUEVA SOLICITUD</p><h2 id="modal-title">¿Qué quieres comprar?</h2><p>Mientras más claro seas, mejores ofertas recibirás.</p></div><form class="publish-form" id="publish-form"><div class="form-grid"><label>¿Qué estás buscando?<input id="request-title" type="text" placeholder="Ej. iPhone 11 de 128 GB" required /></label><label>Categoría<select id="request-category"><option>Tecnología</option><option>Hogar y muebles</option><option>Vehículos</option><option>Moda</option><option>Coleccionables</option><option>Servicios</option></select></label><label>Estado que aceptas<select><option>Seminuevo / usado</option><option>Nuevo</option><option>Cualquiera</option></select></label><label>Antigüedad máxima<select><option>6–7 meses</option><option>Hasta 1 año</option><option>Más de 1 año</option><option>No importa</option></select></label><label>Tu presupuesto (USD)<input id="request-budget" type="number" placeholder="Ej. 280" min="1" required /></label><label>Modalidad<select><option>Precio fijo con envío</option><option>Entrega en persona</option><option>Ambas opciones</option></select></label></div><label>Cuéntanos detalles<textarea placeholder="Color, condiciones, accesorios, ubicación o cualquier preferencia..."></textarea></label><label class="upload-zone"><input type="file" id="image-upload" accept="image/*" multiple hidden /><span class="upload-icon">↑</span><b>Sube imágenes de referencia</b><small>JPG, PNG o WEBP · hasta 5 imágenes</small><span id="file-name"></span></label><button class="button button-primary" type="submit">Publicar mi solicitud →</button></form></template>
+  <script src="app.js"></script>
+  </body>
+</html>
