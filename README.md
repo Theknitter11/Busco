@@ -1,4 +1,4 @@
-# Busco
+# Busqio
 
 Prototipo estático de un marketplace inverso: los compradores publican lo que necesitan y los vendedores envían ofertas.
 
@@ -17,3 +17,4 @@ Abre `index.html` en el navegador. La demostración de los paneles está en `app
 ## Importante
 
 Esta versión es una demostración visual estática. Los formularios, pagos, cuentas, mensajes e imágenes todavía no guardan información real. Antes de aceptar usuarios reales, conecta autenticación, base de datos, almacenamiento de imágenes y un proveedor de pagos seguro.
+
